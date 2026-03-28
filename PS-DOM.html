@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: rgb(0, 0, 0);
+            font: arial, 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = document.body
+      var p1 = document.getElementsByTagName('p') [1]//o 0 vai selecionar o primeiro p etc...
+     /*
+      var d = document.getElementById('msg')
+      d.style.background = 'gray'
+        */
+      //d.innerText = 'Estou aguardando...'   
+       //tem q ter o chochete para selecionar
+       var d = document.querySelector('div#msg')
+     d.style.color = 'white'
+    </script>
+</body>
+</html>
